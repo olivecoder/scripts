@@ -137,10 +137,10 @@ class FtpUploadOnce(FtpUpload):
 
 
 class MontrealUpload(FtpUploadOnce):
-    REMOTE_HOST = "ftp.montreal.com.br"
-    REMOTE_USER = "exportarqval"
-    REMOTE_PASS = "exp@2011"
-    UPLOADED_FNAME = "/home/rsync/log/uploaded.txt" # WARNING: DOES NOT CHANGE THIS NAME
+    REMOTE_HOST = "ftp.host.com"
+    REMOTE_USER = "ftpuser"
+    REMOTE_PASS = "ftppass"
+    UPLOADED_FNAME = "/home/rsync/log/uploaded.txt" # WARNING: DO NOT CHANGE THIS NAME
 
     def __init__(self):
         self.loadUploadedSet(self.UPLOADED_FNAME)
